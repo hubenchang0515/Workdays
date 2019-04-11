@@ -1,7 +1,8 @@
 # Workdays
-A simple library about checking workdays and holidays
+A simple library about checking workdays and holidays.
+* [Anti 996 LICENSE](LICENSE) 
 
-# Demo
+## Demo
 ```Python
 from Workdays import *
 
@@ -28,7 +29,13 @@ print('Workdays of May is %d days' % wd.countWorkdays([2019,5,1], [2019,5,31]))
 print('Holidays of May is %d days' % wd.countHolidays([2019,5,1], [2019,5,31]))
 ```
 
-# Class
+## Constant
+```Python
+# Week days
+MON, TUE, WED, THU, FRI, SAT, SUN
+```
+
+## Class
 ```Python
 class Workdays(object) :
 
@@ -84,10 +91,12 @@ class Workdays(object) :
     # Get the next week day after the day
     # Parameter
     #       day : after this day
+    #       weekday : MON, TUE, WED, THU, FRI, SAT, SUN
     def nextWeekday(self, day, weekday) :
 
     # Get the previous week day before the day
     # Parameter
     #       day : before this day
+    #       weekday : MON, TUE, WED, THU, FRI, SAT, SUN
     def prevWeekday(self, day, weekday) : 
 ```
